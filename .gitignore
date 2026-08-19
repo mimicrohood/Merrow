@@ -1,0 +1,10 @@
+# secrets: never commit the real key
+malloo-bot/config.json
+
+# python
+__pycache__/
+*.pyc
+
+# logs / runtime
+*.log
+*.tmp

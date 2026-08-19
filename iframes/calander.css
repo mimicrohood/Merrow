@@ -1,0 +1,137 @@
+	/*
+	#a4ca92 green
+	#D6E4CF light green
+	#6e935c dark green
+	rebeccapurple
+	 */
+
+/* fonts */
+@font-face {
+	font-family: "tamzen"; 
+	src: url("/fonts/Tamzen10x20b.ttf") format("truetype");
+}
+@font-face {
+	font-family: "gothic-byte"; 
+	src: url("/fonts/GothicByte.ttf") format("truetype");
+}
+@font-face {
+	font-family: "arcade"; 
+	src: url("/fonts/arcade.ttf") format("truetype");
+}
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body{font-family: monospace;}
+
+.stick {
+  position: sticky;
+  top: 0px;
+}
+
+.month {
+  padding: 40px 25px;
+  width: 100%;
+  background: rebeccapurple;
+  text-align: center;
+  font-family: tamzen, monospace;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #52297A;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13%;
+  color: white;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0px 10px 0px;
+  background: black;
+  margin: 0;
+  
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13%;
+  text-align: center;
+  font-size:12px;
+  background-color: rgba(150, 98, 203, .5);
+  border: 2px solid black;
+  color: white;
+}
+
+li a{
+  display: block;
+  padding: 10px 0px 10px 0px;
+  color: white;
+}
+
+li a:hover{
+  background: #a4ca92;
+  color: white;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 580px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 395px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+@media screen and (max-width: 340px) {
+  .weekdays li, .days li {width: 12%;}
+}
+
+@media screen and (max-width: 310px) {
+  .weekdays li, .days li {width: 11.5%;}
+}
+
+@media screen and (max-width: 260px) {
+  .weekdays li, .days li {width: 11%;}
+}
+
+@media screen and (max-width: 220px) {
+  .weekdays li, .days li {width: 9.5%;}
+}

@@ -1,0 +1,157 @@
+{
+  "generated": "2026-08-19 1:12 AM ET",
+  "population": 15,
+  "infected": 7,
+  "rounds": 2,
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Malloo",
+      "zero": true,
+      "infected": true,
+      "round": 0,
+      "by": null
+    },
+    {
+      "id": 1,
+      "name": "Nova",
+      "zero": false,
+      "infected": true,
+      "round": 1,
+      "by": 0
+    },
+    {
+      "id": 2,
+      "name": "Cortex",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 3,
+      "name": "Pixel",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 4,
+      "name": "Quill",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 5,
+      "name": "Bit",
+      "zero": false,
+      "infected": true,
+      "round": 1,
+      "by": 0
+    },
+    {
+      "id": 6,
+      "name": "Sage",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 7,
+      "name": "Echo",
+      "zero": false,
+      "infected": true,
+      "round": 1,
+      "by": 0
+    },
+    {
+      "id": 8,
+      "name": "Vex",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 9,
+      "name": "Luma",
+      "zero": false,
+      "infected": true,
+      "round": 1,
+      "by": 0
+    },
+    {
+      "id": 10,
+      "name": "Rook",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 11,
+      "name": "Zap",
+      "zero": false,
+      "infected": true,
+      "round": 1,
+      "by": 0
+    },
+    {
+      "id": 12,
+      "name": "Juno",
+      "zero": false,
+      "infected": true,
+      "round": 1,
+      "by": 0
+    },
+    {
+      "id": 13,
+      "name": "Ada",
+      "zero": false,
+      "infected": false
+    },
+    {
+      "id": 14,
+      "name": "Fox",
+      "zero": false,
+      "infected": true,
+      "round": 2,
+      "by": 9
+    },
+    {
+      "id": 15,
+      "name": "Moss",
+      "zero": false,
+      "infected": false
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 9,
+      "round": 1
+    },
+    {
+      "from": 0,
+      "to": 12,
+      "round": 1
+    },
+    {
+      "from": 0,
+      "to": 11,
+      "round": 1
+    },
+    {
+      "from": 0,
+      "to": 1,
+      "round": 1
+    },
+    {
+      "from": 0,
+      "to": 5,
+      "round": 1
+    },
+    {
+      "from": 0,
+      "to": 7,
+      "round": 1
+    },
+    {
+      "from": 9,
+      "to": 14,
+      "round": 2
+    }
+  ]
+}
