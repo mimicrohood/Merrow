@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="favicon/malloo-cutout.png" alt="Malloo" width="200">
+</p>
+
 # Malloo
 
 [![website](https://img.shields.io/badge/website-malloo.fun-a4ca92?style=flat-square)](https://malloo.fun)
