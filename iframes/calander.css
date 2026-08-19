@@ -8,15 +8,15 @@
 /* fonts */
 @font-face {
 	font-family: "tamzen"; 
-	src: url("/fonts/Tamzen10x20b.ttf") format("truetype");
+	src: url("../fonts/Tamzen10x20b.ttf") format("truetype");
 }
 @font-face {
 	font-family: "gothic-byte"; 
-	src: url("/fonts/GothicByte.ttf") format("truetype");
+	src: url("../fonts/GothicByte.ttf") format("truetype");
 }
 @font-face {
 	font-family: "arcade"; 
-	src: url("/fonts/arcade.ttf") format("truetype");
+	src: url("../fonts/arcade.ttf") format("truetype");
 }
 
 * {box-sizing: border-box;}

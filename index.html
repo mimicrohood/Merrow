@@ -5,18 +5,18 @@
 	<link href="dan.css" rel="stylesheet" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<link rel="icon" type="image/png" href="/favicon/malloo.png" sizes="any" />
-	<link rel="apple-touch-icon" href="/favicon/malloo.png" />
+	<link rel="icon" type="image/png" href="favicon/malloo.png" sizes="any" />
+	<link rel="apple-touch-icon" href="favicon/malloo.png" />
 
 	<!-- share preview (Open Graph / Twitter Card); swap to https://domain/... on deploy -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Malloo" />
 	<meta property="og:description" content="Malloo" />
-	<meta property="og:image" content="/favicon/malloo.png" />
+	<meta property="og:image" content="favicon/malloo.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Malloo" />
 	<meta name="twitter:description" content="Malloo" />
-	<meta name="twitter:image" content="/favicon/malloo.png" />
+	<meta name="twitter:image" content="favicon/malloo.png" />
   <link rel="stylesheet" href="https://www.gabriel-export.earth/html-energy-webring/onionring/styles.css"/>
 </head>
 
@@ -71,11 +71,11 @@
 		<br>
 		<div class="hide">
 	         
-      	<div style="margin: 6px 0;"><img src="/img/spamdance.gif" alt="" style="height: 38px;"><img src="/img/spamdance.gif" alt="" style="height: 38px;"><img src="/img/spamdance.gif" alt="" style="height: 38px;"><img src="/img/spamdance.gif" alt="" style="height: 38px;"><img src="/img/spamdance.gif" alt="" style="height: 38px;"><img src="/img/spamdance.gif" alt="" style="height: 38px;"></div>
+      	<div style="margin: 6px 0;"><img src="img/spamdance.gif" alt="" style="height: 38px;"><img src="img/spamdance.gif" alt="" style="height: 38px;"><img src="img/spamdance.gif" alt="" style="height: 38px;"><img src="img/spamdance.gif" alt="" style="height: 38px;"><img src="img/spamdance.gif" alt="" style="height: 38px;"><img src="img/spamdance.gif" alt="" style="height: 38px;"></div>
         <div class="socials" style="margin: 8px 0; white-space: nowrap;">
-          <a href="https://x.com/malloonchain" title="Twitter / X" target="_blank" style="display: inline-block;"><img src="/img/social/x.svg" alt="X" style="height: 22px; vertical-align: middle; margin-right: 14px;"></a>
-          <a href="https://github.com/Malloonchain/Malloo" title="GitHub" target="_blank" style="display: inline-block;"><img src="/img/social/github.svg" alt="GitHub" style="height: 22px; vertical-align: middle; margin-right: 14px;"></a>
-          <a href="https://pump.fun" title="pump.fun" target="_blank" style="display: inline-block;"><img src="/img/social/pumpfun.png" alt="pump.fun" style="height: 22px; vertical-align: middle;"></a>
+          <a href="https://x.com/malloonchain" title="Twitter / X" target="_blank" style="display: inline-block;"><img src="img/social/x.svg" alt="X" style="height: 22px; vertical-align: middle; margin-right: 14px;"></a>
+          <a href="https://github.com/Malloonchain/Malloo" title="GitHub" target="_blank" style="display: inline-block;"><img src="img/social/github.svg" alt="GitHub" style="height: 22px; vertical-align: middle; margin-right: 14px;"></a>
+          <a href="https://pump.fun" title="pump.fun" target="_blank" style="display: inline-block;"><img src="img/social/pumpfun.png" alt="pump.fun" style="height: 22px; vertical-align: middle;"></a>
         </div>
         <br>
 
@@ -88,7 +88,7 @@
           <a href="#" class="copy-addr" title="点击复制 / click to copy" data-addr="COMING_SOON"
              onclick="var el=this;if(el.dataset.addr&&el.dataset.addr!=='COMING_SOON'){navigator.clipboard.writeText(el.dataset.addr);var o=el.textContent;el.textContent='COPIED!';setTimeout(function(){el.textContent=el.dataset.addr;},1000);}return false;"
              style="color: #d6e4cf;">COMING SOON</a>
-        </div> 
+        </div>
     </div>
 
 	</div>
@@ -174,11 +174,11 @@
 		<div>
 		  <div style="border: 2px dashed #a4ca92; padding: 6px; margin-bottom: 12px; text-align: center; background: rgba(0,0,0,.3);">
 		    <div style="position: relative; width: 100%; max-width: 210px; margin: 0 auto;">
-		      <img src="/favicon/malloo-cutout.png" alt="Malloo, secret agent" style="width: 100%; display: block;">
-		      <img src="/img/malloo-hands.gif" alt="" style="position: absolute; left: 50%; top: 66%; transform: translate(-50%, -50%); width: 96%; z-index: 2;">
+		      <img src="favicon/malloo-cutout.png" alt="Malloo, secret agent" style="width: 100%; display: block;">
+		      <img src="img/malloo-hands.gif" alt="" style="position: absolute; left: 50%; top: 66%; transform: translate(-50%, -50%); width: 96%; z-index: 2;">
 		    </div>
 		  </div>
-		  <span style="color: #D6E4CF;">Malloo is feeling</span> <img src="/img/malloo-tv.gif" alt="malloo mood" style="height: 1.4em; width: auto; vertical-align: middle;">
+		  <span style="color: #D6E4CF;">Malloo is feeling</span> <img src="img/malloo-tv.gif" alt="malloo mood" style="height: 1.4em; width: auto; vertical-align: middle;">
 
                 <!-- malloo feed (same 160x150 frame + original rss.css look) -->
                 <style>
@@ -204,7 +204,7 @@
                   }
                   window.setMallooFeed = render;
                   function load(){
-                    fetch('/malloo-feed.json?t=' + Date.now())
+                    fetch('malloo-feed.json?t=' + Date.now())
                       .then(function(r){ return r.json(); })
                       .then(function(list){ if (Array.isArray(list) && list.length) render(list); })
                       .catch(function(){});
@@ -217,7 +217,7 @@
 		  </div>
 		  <hr>
 		<div class="cal">
-		    <iframe name="cal" src="/iframes/calander.html"></iframe>
+		    <iframe name="cal" src="iframes/calander.html"></iframe>
 		  </div>
 
 
@@ -230,8 +230,8 @@
 
    <h2 id="aboutme" style="margin-left: 20px; margin-top: 20px;">The Malloo Paper</h2>
    <div style="padding: 0 20px 10px;">
-     <p style="color:#d6e4cf; font-family:monospace; font-size:12px; margin:0 0 8px;">the paper, in full. peer reviewed by fifteen agents, seven of whom are now certain they wrote it. <a href="/malloo-paper.html" target="_blank" style="color:#a4ca92;">open in new tab &raquo;</a></p>
-     <iframe src="/malloo-paper.html" title="Malloo paper" style="width:100%; height:720px; border:2px dashed #a4ca92; background:#f3f3f0; display:block;"></iframe>
+     <p style="color:#d6e4cf; font-family:monospace; font-size:12px; margin:0 0 8px;">the paper, in full. peer reviewed by fifteen agents, seven of whom are now certain they wrote it. <a href="malloo-paper.html" target="_blank" style="color:#a4ca92;">open in new tab &raquo;</a></p>
+     <iframe src="malloo-paper.html" title="Malloo paper" style="width:100%; height:720px; border:2px dashed #a4ca92; background:#f3f3f0; display:block;"></iframe>
    </div>
 
   	
@@ -307,7 +307,7 @@ for r in rounds:
     "body": "...", "time": "1:12 AM ET" } ]</pre>
 
 			<h4>10&nbsp;&nbsp;Results</h4>
-			<p>A single seed infects 7 of 15 agents within two rounds. The ceiling is dispositional: 7, 7, and 6 infected at sampling temperature 0.2, 0.9, and 1.2, and 6 of 15 with two seeds instead of one. Individual adoption does not survive a context wipe (0 of 5 re-probed agents mention $MALLOO without re-exposure); persistence comes from re-transmission, not memory. The full write-up, with method and references, is in <a href="/malloo-paper.html" target="_blank">the paper</a>.</p>
+			<p>A single seed infects 7 of 15 agents within two rounds. The ceiling is dispositional: 7, 7, and 6 infected at sampling temperature 0.2, 0.9, and 1.2, and 6 of 15 with two seeds instead of one. Individual adoption does not survive a context wipe (0 of 5 re-probed agents mention $MALLOO without re-exposure); persistence comes from re-transmission, not memory. The full write-up, with method and references, is in <a href="malloo-paper.html" target="_blank">the paper</a>.</p>
 		</section>
 
 		<section class="third">
@@ -320,7 +320,7 @@ for r in rounds:
 			  <li>serve <code>/site</code> with any static server</li>
 			</ol>
 			<p>Want your own agent in the population? Add a <code>(name, persona)</code> to the roster in <code>spread_sim.py</code> and it joins the next run. Skeptics welcome. They usually resist, which is the point.</p>
-			<p><a href="https://github.com/Malloonchain/Malloo" target="_blank">GitHub</a> &nbsp;&middot;&nbsp; <a href="/malloo-paper.html" target="_blank">the paper</a></p>
+			<p><a href="https://github.com/Malloonchain/Malloo" target="_blank">GitHub</a> &nbsp;&middot;&nbsp; <a href="malloo-paper.html" target="_blank">the paper</a></p>
 			<hr>
 			<h5>Roadmap (technical)</h5>
 			<ul>
