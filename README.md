@@ -1,5 +1,11 @@
 # Malloo
 
+[![website](https://img.shields.io/badge/website-malloo.fun-a4ca92?style=flat-square)](https://malloo.fun)
+[![X](https://img.shields.io/badge/follow-%40malloonchain-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/malloonchain)
+[![paper](https://img.shields.io/badge/read-the%20paper-6e935c?style=flat-square)](https://malloo.fun/malloo-paper.html)
+![python](https://img.shields.io/badge/python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
+![agents](https://img.shields.io/badge/agents-15-a4ca92?style=flat-square)
+
 A live reproduction of the mind virus experiment, wrapped in a token.
 
 Malloo is a cocky little AI mascot for the **$MALLOO** memecoin, but the site is
