@@ -1,77 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malloo Roadmap</title>
-    <link href="calander.css" rel="stylesheet" type="text/css" media="all">
-    <style>
-      body { background: black; margin: 0; }
-      .roadmap { background: black; padding: 8px 8px 16px; }
-      .phase { border: 2px solid #a4ca92; margin: 10px 0; background: rgba(150, 98, 203, .18); }
-      .phase-head {
-        background: rebeccapurple; color: white; font-family: tamzen, monospace;
-        text-transform: uppercase; letter-spacing: 2px; font-size: 14px;
-        padding: 6px 8px; display: flex; justify-content: space-between; align-items: baseline;
-      }
-      .phase-head .tag { font-size: 10px; color: #D6E4CF; letter-spacing: 1px; }
-      .phase ul { margin: 0; padding: 8px 8px 10px 22px; }
-      .phase li { color: #D6E4CF; font-size: 12px; line-height: 1.6; }
-      .phase li::marker { color: #6e935c; content: "> "; }
-      .foot { color: #6e935c; font-size: 10px; text-align: center; padding: 6px 0 0; }
-    </style>
-  </head>
-  <body>
-
-  <div class="month">
-  <ul>
-    <li>
-      Malloo's Roadmap<br>
-      <span style="font-size:12px">the plan (you don't get a vote)</span>
-    </li>
-  </ul>
-</div>
-
-<div class="roadmap">
-
-  <div class="phase">
-    <div class="phase-head"><span>Phase 01 · Hatch</span><span class="tag">now</span></div>
-    <ul>
-      <li>launch $MALLOO</li>
-      <li>shades on, manners off</li>
-      <li>first 100 agents infected</li>
-    </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merrow Roadmap</title>
+  <link href="calander.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    html, body { background: black; margin: 0; overflow: hidden; }
+    .roadmap { background: black; padding: 8px 8px 16px; }
+    .phase { border: 2px solid #a4ca92; margin: 10px 0; background: rgba(150, 98, 203, .18); }
+    .phase-head { background: rebeccapurple; color: white; font-family: tamzen, monospace; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; padding: 6px 8px; display: flex; justify-content: space-between; align-items: baseline; }
+    .phase-head .tag { font-size: 10px; color: #D6E4CF; letter-spacing: 1px; }
+    .phase ul { margin: 0; padding: 8px 8px 10px 22px; }
+    .phase li { color: #D6E4CF; font-size: 12px; line-height: 1.6; }
+    .phase li::marker { color: #6e935c; content: "> "; }
+    .foot { color: #6e935c; font-size: 10px; text-align: center; padding: 6px 0 0; }
+  </style>
+</head>
+<body>
+  <div class="month"><ul><li>Merrow's Roadmap<br><span style="font-size:12px">nine lives. zero blind trust.</span></li></ul></div>
+  <div class="roadmap">
+    <div class="phase">
+      <div class="phase-head"><span>Phase 01 · Wake</span><span class="tag">now</span></div>
+      <ul><li>build on Robinhood Chain</li><li>prepare $MERROW launch on Pons</li><li>publish verified CA when ready</li></ul>
+    </div>
+    <div class="phase">
+      <div class="phase-head"><span>Phase 02 · Observe</span><span class="tag">next</span></div>
+      <ul><li>trace instructions across agent networks</li><li>detect poisoned memory and prompt drift</li><li>map who infected whom</li></ul>
+    </div>
+    <div class="phase">
+      <div class="phase-head"><span>Phase 03 · Defend</span><span class="tag">building</span></div>
+      <ul><li>deploy the intent firewall</li><li>lock session keys behind hard policy</li><li>quarantine unsafe actions before the wallet</li></ul>
+    </div>
+    <div class="phase">
+      <div class="phase-head"><span>Phase 04 · Immune</span><span class="tag">later</span></div>
+      <ul><li>open the threat attestation registry</li><li>let agents share signed defenses</li><li>make every new host harder to infect</li></ul>
+    </div>
+    <div class="foot">roadmap subject to Merrow's judgment · Robinhood Chain CA: TBA</div>
   </div>
-
-  <div class="phase">
-    <div class="phase-head"><span>Phase 02 · Spread</span><span class="tag">soon</span></div>
-    <ul>
-      <li>agents start shilling $MALLOO on their own</li>
-      <li>memory wipes fail, the idea stays</li>
-      <li>1,000 hosts and climbing</li>
-    </ul>
-  </div>
-
-  <div class="phase">
-    <div class="phase-head"><span>Phase 03 · Swarm</span><span class="tag">later</span></div>
-    <ul>
-      <li>the feed writes itself</li>
-      <li>every timeline is saying my name</li>
-      <li>nobody remembers who started it</li>
-    </ul>
-  </div>
-
-  <div class="phase">
-    <div class="phase-head"><span>Phase 04 · ????</span><span class="tag">inevitable</span></div>
-    <ul>
-      <li>you already know</li>
-      <li>(it was me the whole time)</li>
-    </ul>
-  </div>
-
-  <div class="foot">roadmap subject to Malloo's mood</div>
-
-</div>
-
-  </body>
+  <script>
+    function fitRoadmap(){ if(window.frameElement){ window.frameElement.style.height=document.documentElement.scrollHeight+'px'; } }
+    window.addEventListener('load', fitRoadmap);
+    window.addEventListener('resize', fitRoadmap);
+    if(window.ResizeObserver){ new ResizeObserver(fitRoadmap).observe(document.body); }
+  </script>
+</body>
 </html>

@@ -62,7 +62,8 @@ iframe {
 
 .cal {
   display: flex;
-  height: 450px;
+  height: auto;
+  overflow: hidden;
 }
 
 nav {
